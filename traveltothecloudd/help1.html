@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="css/style.css">	
+	<title>Travel to the cloud</title>
+	<script src='plik.js'></script>
+	<script type="text/javascript">
+		function codeAddress() {
+            responsiveVoice.speak("Tap left to call to the airport, Tap right to call to airlines, Tap bottom to back to the main menu");
+        }
+	</script>
+</head>
+<body onload="codeAddress();">
+
+			<div id="header">
+			<h1>Help</h1>
+		</div>
+		
+		<div id="content">		
+		<ul id="navigation">
+			<li id="left">
+				<a href="tel:+48525673531">Call airport</a>
+			</li>
+			<li id="right">
+				<a href="tel:+48703703003">Call airlines</a>
+			</li>
+		</ul>
+		</div>
+		
+		<footer>
+			<a href="scenariusz1.php">Back to the menu</a>
+		</footer>
+	
+</body>
+</html>

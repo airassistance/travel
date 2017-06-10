@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Travel to the cloud</title>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	<script type="text/javascript">
+		function codeAddress() {
+            responsiveVoice.speak("Do you want to audiodescription? If yes tap your phone on the right side");
+        }
+	</script>
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="codeAddress();">
+	
+		<div id="header">
+			<h1>Do you want audiodescription?</h1>
+			
+		</div>
+		
+		<div id="content">		
+		<ul id="navigation">
+			<li id="left">
+				<form action="formularz.php" method="post">
+					<input id="przycisk1" type="submit" value="VISUAL VERSION" name="fba">
+				</form>
+			</li>
+			<li id="right">
+				<form action="formularz.php" method="post">
+					<input id="przycisk2" type="submit" value="AUDIO VERSION" name="fa">
+				</form>
+			</li>
+		</ul>
+		</div>
+			
+				
+			
+			
+				
+			
+		
+		<footer>
+			<form action="help.php" method="post">
+			<button type="submit" class="button button-block">I need help</button>
+			</form>
+		</footer>
+	
+</body>
+</html>
